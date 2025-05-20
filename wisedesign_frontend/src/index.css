@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.home-carousel .carousel-item img {
+  max-height: 480px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.navbar.bg-body-tertiary {
+  background-color: #800020 !important;        
+}
+
+.navbar a {
+  color: #ffffff;                          
+  font-weight: 700;                        
+  text-decoration: none;                  
+}
+
+
+.find-us__title {
+  font-size: clamp(1.4rem, 4vw, 2.0rem);
+  margin-bottom: 1.25rem;
+  font-style: italic;
+  text-underline-offset: 4px;
+  color:#800020;
+}
+
+.find-us__row {
+  display: flex;
+  gap: 2rem;                 
+  align-items: flex-start;   
+}
+
+.find-us__map {
+  flex: 1 1 60%;             
+  height: 450px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.find-us__card {
+  flex: 0 1 320px;           
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  line-height: 1.45;
+  font-size: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .find-us__row {
+    flex-direction: column;
+  }
+  .find-us__map {
+    height: 300px;
+  }
+  .find-us__card {
+    margin-top: 1rem;
+  }
+}
